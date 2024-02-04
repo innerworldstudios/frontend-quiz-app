@@ -1,42 +1,96 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+	/* Primary */
+	--color-primary: #a729f5;
+	--color-primary-hover: #a976c8;
+
+	/* Typography */
+	--font-heading-light: #313e51;
+	--font-body-light: #626c7f;
+	--font-heading-dark: #ffffff;
+	--font-body-dark: #abc1e1;
+
+	/* Backgrounds */
+	--bg-dark: #313e51;
+	--bg-light: #f4f6fa;
+	/* Selection letter background color */
+	--bg-light-grey: #f4f6fa;
+
+	/* Foreground */
+	--fg-dark: #3b4d66;
+	--fg-light: #ffffff;
+
+	/* Actions */
+	--success: #26d782;
+	--danger: #ee5454;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Global typography settings */
+body,
+html,
+* {
+	font-family: 'Rubik', sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading-display,
+.heading-lg-bold,
+.heading-md,
+.heading-sm {
+	font-weight: medium;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.heading-lg,
+.body-md,
+.body-sm {
+	font-weight: regular;
 }
 
-.card {
-  padding: 2em;
+.heading-lg-bold,
+.heading-lg {
+	font-size: 64px;
 }
 
-.read-the-docs {
-  color: #888;
+.body-md,
+.body-sm {
+	font-size: 12px;
+}
+
+.heading-display,
+.heading-lg-bold,
+.heading-lg,
+.heading-md,
+.heading-sm {
+	line-height: 100%;
+}
+
+.body-md,
+.body-sm {
+	line-height: 150%;
+}
+
+.heading-display {
+	font-size: 144px;
+}
+
+.heading-md {
+	font-size: 36px;
+}
+
+.heading-sm {
+	font-size: 28px;
+}
+
+.body-sm {
+	font-style: italic;
+}
+
+/* Button styles */
+.btn {
+	background-color: var(--color-primary);
+	padding: 32px;
+}
+
+.btn:hover {
+	background-color: var(--color-primary-hover);
 }
